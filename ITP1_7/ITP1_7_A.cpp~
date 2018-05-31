@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main(){
+  int m,f,r;
+  int count = 0;
+  int mid[50], fin[50], re[50];
+  while(true){
+    scanf("%d %d %d",&mid[count],&fin[count],&re[count]);
+  }
+  for(int i=0; i<count; i++){
+    m = mid[count];
+    f = fin[count];
+    r = re[count];
+    if(m == -1 || f == -1 || m + f < 30) printf("F");
+    else if(m+f>=80) printf("A");
+    else if(65 <= m+f && m+f < 80) printf("B");
+    else if((50 <= m+f && m+f < 65) || r <= 50) printf("C");
+    else if(30 <= m+f && m+f < 50) printf("D");
+    else if(m+f < 30) printf("F");
+    else printf("Undefined");
+  }
+}
