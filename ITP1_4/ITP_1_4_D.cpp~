@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(){
+  int amount;
+  int max,min,sum;
+  int input[10000];
+  scanf("d",amount);
+  for(int i=0;i<amount;i++){
+    scanf("%d",input[i]);
+  }
+  
+  for(int i=0)
+}
